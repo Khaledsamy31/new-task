@@ -2,10 +2,11 @@
     background-size: cover !important;
 }
 
-@media(max-width: 650px){
+@media(max-width: 590px){
     .imgCard{
-        width: 8rem !important;
-        margin: auto;
+        width: 12rem !important;
     }
+
+
 }
 
