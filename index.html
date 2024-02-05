@@ -12,29 +12,29 @@
 
 </head>
 <body>
-
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <img src="images/logo.png" alt="">
       <button class="navbar-toggler bg-light text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 cha">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Store</a>
+            <a class="nav-link text-white" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link text-white" href="#">Store</a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">
               Menu
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Sales</a></li>
-              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </button>
+            <ul class="dropdown-menu bg-primary bg-gradient bg-success p-2 text-dark bg-opacity-10">
+              <li><a class="dropdown-item" href="#1">About</a></li>
+              <li><a class="dropdown-item" href="#2">Sales</a></li>
+              <li><a class="dropdown-item" href="#3">Contact Us</a></li>
             </ul>
           </li>
         </ul>
@@ -42,7 +42,7 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
           
-          <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+          <button class="btn btn-outline-success ms-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
 
 
 <!-- Modal -->
@@ -67,9 +67,16 @@
           </div>
         </div>
       </div>
+
+      <div class="form-check form-switch ms-3">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+      </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+
       </div>
     </div>
   </div>
@@ -81,44 +88,46 @@
 
 <div class="container">
 
-<div id="carouselExampleCaptions" class="carousel slide" style="height: 80vh;">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active bg-dark"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active bg-dark"></button>
+  <div id="carouselExampleCaptions" class="carousel slide" style="height: 80vh;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active bg-dark"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active bg-dark"></button>
+    </div>
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="images/chair1.jpg" class="d-block w-100 h-100 imgs" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="text-body">Chair</h5>
+          <button class="btn btn-primary">View Item</button>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <img src="images/chair2.jpg" class="d-block w-100 h-100 imgs" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="text-body">Chair</h5>
+          <button class="btn btn-primary">View Item</button>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <img src="images/chair3.jpg" class="d-block w-100 h-100 imgs" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5 class="text-body">Chair</h5>
+          <button class="btn btn-primary">View Item</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden bg-dark">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden bg-dark">Next</span>
+    </button>
   </div>
-  <div class="carousel-inner h-100">
-    <div class="carousel-item active h-100">
-      <img src="images/chair1.jpg" class="d-block w-100 h-100 imgs" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="text-body">Chair</h5>
-        <button class="btn btn-primary">View Item</button>
-      </div>
-    </div>
-    <div class="carousel-item h-100">
-      <img src="images/chair2.jpg" class="d-block w-100 h-100 imgs" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="text-body">Chair</h5>
-        <button class="btn btn-primary">View Item</button>
-      </div>
-    </div>
-    <div class="carousel-item h-100">
-      <img src="images/chair3.jpg" class="d-block w-100 h-100 imgs" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="text-body">Chair</h5>
-        <button class="btn btn-primary">View Item</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-    <span class="visually-hidden bg-dark">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-    <span class="visually-hidden bg-dark">Next</span>
-  </button>
-</div>
+
+
 
 </div>
   <!-- ============================================== -->
@@ -168,10 +177,10 @@
 <!-- =========================================== -->
     <div class="container">
       <div class="row car pt-3 justify-content-center">
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body imgCard">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -179,10 +188,10 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body imgCard">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -190,10 +199,10 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body imgCard">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -201,8 +210,8 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -212,8 +221,8 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -223,8 +232,8 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -234,8 +243,8 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12 m-auto">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6 m-auto">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -245,8 +254,8 @@
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card m-auto text-center" style="width: 16rem;">
+        <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="card m-auto text-center imgCard" style="width: 16rem;">
             <img src="images/category-banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -259,7 +268,10 @@
 
       
 
+
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

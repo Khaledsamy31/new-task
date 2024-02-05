@@ -1,7 +1,11 @@
 .imgs{
     background-size: cover !important;
 }
-/* .car{
-    grid-row-gap: 10px;
-    text-align: center;
-} */
+
+@media(max-width: 568px){
+    .imgCard{
+        width: 12rem !important;
+        margin: auto;
+    }
+}
+
