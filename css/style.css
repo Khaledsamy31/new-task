@@ -115,30 +115,22 @@ padding: 0% !important;
     
 }
 .NewsContent{
-    width: 80%;
+    /* width: 80%; */
     height: 350px;
     border: 1px solid black;
 }
 .idk{
     border: 2px solid;
     height: 0px;
-    width: 10% !important;
-    /* margin-bottom: 400px !important; */
+    width: 25% !important;
 }
 @media(max-width: 600px){
     .idk{
-        width: 20% !important;
+        width: 35% !important;
     }
 
 }
-
-.pic1{
-    background-color: black;
-    width: 500px !important;
-    /* height: 200px !important; */
+.cont{
+    width: 50% !important;
 }
-.pic2{
 
-background-color: black;
-
-}
