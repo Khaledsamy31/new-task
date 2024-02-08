@@ -117,7 +117,7 @@ padding: 0% !important;
 .NewsContent{
     /* width: 80%; */
     height: 350px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .idk{
     border: 2px solid;
@@ -127,10 +127,42 @@ padding: 0% !important;
 @media(max-width: 600px){
     .idk{
         width: 35% !important;
-    }
 
+    }
+    .pic2{
+        height: 100% !important;
+    }
+    .pic1{
+        overflow-y:scroll !important ;
+        height: 40% !important;
+        }
+        .NewsContent{
+            height: 35rem !important;
+        }
+        .btn{
+margin-top: 2px !important;
+ }
+
+}
+
+@media(max-width: 990px){
+    .NewsContent{
+        height: 35rem !important;
+    }
+    .btn{
+margin-top: 2px !important;
+}
 }
 .cont{
     width: 50% !important;
+}
+.pic2{
+background-image: url(../images/sinaimm.jfif);
+clip-path: polygon(19% 0, 100% 0, 100% 100%, 34% 100%) !important;
+border: 1px solid rgb(197, 197, 197);
+border-radius: 2px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
