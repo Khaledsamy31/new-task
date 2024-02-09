@@ -8,10 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
     <div class="container-fluid">
       <img src="images/logo.png" alt="">
       <button class="navbar-toggler bg-light text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +23,13 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link text-white" href="#">Store</a>
-
           </li>
+          
           <li class="nav-item dropdown">
             <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">
               Menu
             </button>
-            <ul class="dropdown-menu bg-primary bg-gradient bg-success p-2 text-dark bg-opacity-10">
+            <ul class="dropdown-menu p-2 text-dark bg-opacity-10">
               <li><a class="dropdown-item" href="#1">About</a></li>
               <li><a class="dropdown-item" href="#2">Sales</a></li>
               <li><a class="dropdown-item" href="#3">Contact Us</a></li>
@@ -44,7 +43,7 @@
           <button class="btn btn-outline-success ms-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
 
 
-<!-- Modal -->
+Modal
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -69,7 +68,7 @@
 
       <div class="form-check form-switch ms-3">
         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Remeber me</label>
       </div>
 
       <div class="modal-footer">
@@ -80,6 +79,8 @@
     </div>
   </div>
 </div>
+
+
         </form>
       </div>
     </div>
@@ -469,22 +470,22 @@
 <!-- ==================================================== -->
 <h2 class="text-center">Store News</h2>
 
-<div class="container pa">
+<div class="container">
 <div class="NewsContent row justify-content-between m-auto shadow mb-5 bg-body-tertiary rounded">
   <div class="cont col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 p-3">
   <p class="text-start text-primary text-uppercase fw-bold">This is title<br>
 <i class="fa-regular fa-calendar-days"></i>
 <span class="half-colored-text text-dark">Mon, May 25th 2024  
   <div class="idk text-primary"></div>
-  <div class="pic1 text-start"><h2 style="width: 100%; font-size: 25px;" class="text-start pt-2">hello world, just try to typing some words for test, do not matter the meaning, just keep writing and keep writing... go ahead.. write more and more, don't stop, never give up </h2></div>
+  <div class="pic1 text-start"><h2 style="width: 100%; font-size: 25px;" class="text-start pt-2">hello world,
+     just try to typing some words for test, do not matter the meaning, just keep writing and keep writing...
+      go ahead.. write more and more, don't stop, never give up </h2></div>
 
 </span></p>
-<div class="btn pt-2 column">
-  <button type="button" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Play</button>
-  <button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"> Shoping</i></button>
-  <button type="button" class="btn btn-secondary"><i class="fa-solid fa-share-nodes"></i> Share</button>
-  
-</div>
+
+<button type="button" class="btn btn-primary"><i class="fa-solid fa-play"></i> Play</button>
+<button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"> Mart</i></button>
+<button type="button" class="btn btn-secondary btnn"><i class="fa-solid fa-share-nodes"></i> Share</button>
 
 
 </div>
@@ -496,10 +497,96 @@
 </div>
 </div>
 
+<!-- ======================================== -->
 
+<div class="container pa">
+  <div class="NewsContent row justify-content-between m-auto shadow mb-5 bg-body-tertiary rounded">
+    
+  
+    <div class="pic3 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+      <div class="bg-overlay"></div>
+      <img class="pic2" src="images/sinaim.jfif" style="width: 100%; height: 100%;" alt="">
+    </div>
+  
+  
+    <div class="cont3 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 p-3">
+      <p class="text-start text-primary text-uppercase fw-bold">This is title<br>
+    <i class="fa-regular fa-calendar-days"></i>
+    <span class="half-colored-text text-dark"> Mon, May 25th 2024  
+      <div class="idk text-primary"></div>
+      <div class="pic1 text-start"><h2 style="width: 100%; font-size: 25px;" class="text-start pt-2">hello world, just try to typing some words for test, do not matter the meaning, just keep writing and keep writing... go ahead.. write more and more, don't stop, never give up </h2></div>
+    
+    </span></p>
+    
+    <button type="button" class="btn btn-primary"><i class="fa-solid fa-play"></i> Play</button>
+    <button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"> Mart</i></button>
+    <button type="button" class="btn btn-secondary btnn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+    
+    
+    </div>
+  </div>
+  </div>
+  <!-- =============================================== -->
+  
+  
+  <div class="container pa">
+  <div class="NewsContent row justify-content-between m-auto shadow mb-5 bg-body-tertiary rounded">
+    <div class="cont4 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 p-3">
+    <p class="text-start text-primary text-uppercase fw-bold">This is title<br>
+  <i class="fa-regular fa-calendar-days"></i>
+  <span class="half-colored-text text-dark">Mon, May 25th 2024  
+    <div class="idk text-primary"></div>
+    <div class="pic1 text-start"><h2 style="width: 100%; font-size: 25px;" class="text-start pt-2">hello world, just try to typing some words for test, do not matter the meaning, just keep writing and keep writing... go ahead.. write more and more, don't stop, never give up </h2></div>
+  
+  </span></p>
+  
+  <button type="button" class="btn btn-primary"><i class="fa-solid fa-play"></i> Play</button>
+  <button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"> Mart</i></button>
+  <button type="button" class="btn btn-secondary btnn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+  
+  
+  </div>
+  
+    <div class="pic4 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+      <div class="bg-overlay"></div>
+      <img class="pic2" src="images/sinaim.jfif" style="width: 100%; height: 100%;" alt=""></div>
+  
+  </div>
+  </div>
 
+  <!-- ================================== -->
+  <h2 class="text-center text-uppercase fw-bold text-bg-primary">Contact us</h2>
+  <div class="container">
+    <div class="row justify-content-evenly text-uppercase fw-bold text-center">
+      <div class="twitter shadow-lg p-3 mb-5 bg-body-tertiary rounded col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <h5>follow</h5>
+        <a href="#"> <i class="fa-brands fa-square-twitter  text-primary" style="font-size: 5rem;"></i>
+        </a>
+        <p>Go web</p>
+      </div>
+      <div class="wts shadow-lg p-3 mb-5 bg-body-tertiary rounded col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <h5>contact</h5>
+        <a href="#"><i class="fa-brands fa-square-whatsapp text-success" style="font-size: 5rem;"></i>
+        </a>
+        <p>Go web</p>
 
+      </div>
+      <div class="in shadow-lg p-3 mb-5 bg-body-tertiary rounded col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <h5>contact</h5>
+        <a href="#"><i class="fa-brands fa-linkedin text-primary" style="font-size: 5rem;"></i></a>
+        <p>Go web</p>
 
+      </div>
+      <div class="insta shadow-lg p-3 mb-5 bg-body-tertiary rounded col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <h5>for news</h5>
+        <a href="#"><i class="fa-brands fa-square-instagram text-danger" style="font-size: 5rem;"></i></a>
+        <p>Go web</p>
+
+      </div>
+
+    </div>
+
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     

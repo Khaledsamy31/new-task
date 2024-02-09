@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .imgs{
     background-size: cover !important;
 }
@@ -90,7 +95,7 @@ transform: scale(0.9,0.9);
 
 }
 .bg-overlay{
-    background-color: hsl(0, 0%, 0%, .7);
+    background-color: hsl(0, 0%, 0%, .5);
     width: 100%;
     height: 100%;
     color: white;
@@ -116,31 +121,43 @@ padding: 0% !important;
 }
 .NewsContent{
     /* width: 80%; */
-    height: 350px;
+    /* height: 350px !important; */
     /* border: 1px solid black; */
 }
 .idk{
     border: 2px solid;
     height: 0px;
     width: 25% !important;
+    transition: 1s;
+}
+ .NewsContent:hover .idk{
+    width: 35% !important;
 }
 @media(max-width: 600px){
     .idk{
         width: 35% !important;
 
     }
-    .pic2{
+    .NewsContent:hover .idk{
+        width: 45% !important;
+    }
+
+    .pic2, .pic3, .pic4{
         height: 100% !important;
     }
+
+
     .pic1{
         overflow-y:scroll !important ;
         height: 40% !important;
         }
         .NewsContent{
-            height: 35rem !important;
+            /* height: 35rem !important; */
         }
         .btn{
-margin-top: 2px !important;
+            margin-top: 5px !important;
+            width: 100px;
+
  }
 
 }
@@ -149,8 +166,8 @@ margin-top: 2px !important;
     .NewsContent{
         height: 35rem !important;
     }
-    .btn{
-margin-top: 2px !important;
+    .btnn{
+margin-top: 2px;
 }
 }
 .cont{
@@ -165,4 +182,40 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 }
+.cont3{
+    width: 70% !important;
 
+}
+.pic3{
+    background-image: url(../images/sinaimm.jfif);
+    clip-path: polygon(0 0, 85% 0, 73% 100%, 0% 100%) !important;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 30% !important;
+}
+.cont4{
+    width: 50% !important;
+}
+.pic4{
+background-image: url(../images/sinaimm.jfif);
+clip-path: polygon(19% 0, 100% 0, 100% 100%, 1% 100%) !important;
+border: 1px solid rgb(197, 197, 197);
+border-radius: 2px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.modal-backdrop {
+  --bs-backdrop-zindex: 0 !important;
+}
+.twitter, .wts, .in, .insta{
+    /* width: 180px !important; */
+    /* height: 220px !important; */
+    transition: 1s;
+}
+i:hover{
+transform: scale(1.1);
+}
