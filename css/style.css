@@ -170,6 +170,15 @@ padding: 0% !important;
     border-bottom: 1px solid white;
  }
 
+ .hid{
+    display: none ;
+ }
+ .hid2{
+    display: block !important;
+ }
+ .smm{
+    width: 180px !important;
+ }
 }
 
 @media(max-width: 990px){
@@ -185,7 +194,9 @@ margin-top: 2px;
  .a122{
     border-top:1px solid white;
  }
-
+ .smm{
+    width: 210px !important;
+ }
 }
 
 .cont{
@@ -260,7 +271,13 @@ height: 100% !important;
     border-top: 1px solid white;
 
     border-bottom: 1px solid white;
-
-
 }
-
+.imgN{
+    background-image: url(../images/sea.jpg);
+    width: 100% !important;
+    height: 200px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px;
+}
